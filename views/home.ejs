@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatBot By Chandan.U</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="card" id="chatCard">
+            <div id="header">
+                <h1>Chat Box</h1>
+                <button class="close-btn" onclick="toggleChat()">×</button>
+            </div>
+            <div id="message-section">
+                <div class="message bot"><span class="message-text">Hello! How can I help you?</span></div>
+            </div>
+            <div id="loading" class="loading-icon" style="display: none;">⏳</div>
+            <div id="input-section">
+                <input id="input" type="text" placeholder="Type a message" autocomplete="off">
+                <button class="send" onclick="sendMessage()">Send</button>
+            </div>
+            <!-- Footer Section for 'By Chandan U' -->
+            <div id="footer">
+                <p>By Chandan U</p>
+            </div>
+        </div>
+        <button class="message-icon" onclick="toggleChat()">💬</button>
+    </div>
+    <script src="/js/chatbotScript.js"></script>
+</body>
+
+</html>
